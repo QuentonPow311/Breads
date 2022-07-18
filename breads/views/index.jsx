@@ -3,7 +3,7 @@ const Default = require("./layout/Default");
 
 function Index({ breads }) {
   return (
-    <Default>
+    <Default title={title}>
       <h2>Index Page</h2>
       {/* This jsx comment.*/}
       {/*<p>I have {breads[0].name} bread!</p>*/}
