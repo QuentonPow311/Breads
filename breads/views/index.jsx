@@ -1,5 +1,5 @@
 const React = require("react");
-const Default = require("./layout/Default");
+const Default = require("./layout/default");
 
 
 function Index({ breads, title }) {
@@ -9,10 +9,11 @@ function Index({ breads, title }) {
       {/* This jsx comment.*/}
       {/*<p>I have {breads[0].name} bread!</p>*/}
       <ul>
-        {breads.map((bread, index) => {
+        {breads.map((bread) => {
           return (
-            <li key={index}>
-              <a href={`/breads/${index}`}>{bread.name}</a>
+            <li key={bread.id}>
+              <a href={`/breads/${bread.id}`}>
+                {bread.name}</a>
             </li>
           );
         })}
